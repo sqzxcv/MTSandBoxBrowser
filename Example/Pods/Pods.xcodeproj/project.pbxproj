@@ -86,10 +86,10 @@
 
 /* Begin PBXFileReference section */
 		06FF4DB078D6F77A6370E5AB7A5FB951 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AE465B1541F36D4E04A26AAD6A996E3 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE465B1541F36D4E04A26AAD6A996E3 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFB041B26B99FFE6B2682D1B5846672 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		0E1F124CA5DB7DA0D8744F54C8E9508A /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
-		19DFB8FD2D863F8035924D3EAD4D9725 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		10DF58DDED6922F8B0B177FD47BE3D01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1A57536379D2A9E04CE18A202C6BAE97 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
 		1AF02037685584BDA98AD84C84E19D37 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
 		1BBE8240C54A3E8512AD007C4CFD3B00 /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
@@ -98,8 +98,7 @@
 		20C03B5F2E4D80EDF143C2E42B630E4B /* Pods-MTSandBoxBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTSandBoxBrowser_Example-resources.sh"; sourceTree = "<group>"; };
 		2175F39B44DD9E82D3C7E628476A4480 /* MTSandBoxBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTSandBoxBrowser-umbrella.h"; sourceTree = "<group>"; };
 		2518C171F5BF240697779102F08EA419 /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
-		33E57BD66B5450BE22C44EA9108182C3 /* MTSandBoxBrowser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MTSandBoxBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		34973AA214905CA22AF3120B1E529145 /* Pods_MTSandBoxBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTSandBoxBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34973AA214905CA22AF3120B1E529145 /* Pods_MTSandBoxBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTSandBoxBrowser_Tests.framework; path = "Pods-MTSandBoxBrowser_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ACE6774D1D9DD5B108FF457CDDCB41 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
 		35C92496884538DA9276DD2DB855D787 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
 		376817FE58656430BABD0739A8A3AB07 /* MTSandBoxBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MTSandBoxBrowser.modulemap; sourceTree = "<group>"; };
@@ -110,18 +109,18 @@
 		4850C7BBA8433B03B0B3CAF6817A22D7 /* Pods-MTSandBoxBrowser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTSandBoxBrowser_Example-frameworks.sh"; sourceTree = "<group>"; };
 		503ABEE7DE3DD1FF1D9EBEE8F5992F9C /* MTSandBoxBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTSandBoxBrowser.xcconfig; sourceTree = "<group>"; };
 		50FFE4CFC10FC1C92068495597E32D0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5164EF791108669C6BFA8B0A561E070D /* Pods_MTSandBoxBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTSandBoxBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5164EF791108669C6BFA8B0A561E070D /* Pods_MTSandBoxBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTSandBoxBrowser_Example.framework; path = "Pods-MTSandBoxBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EBE3EF1E3D0CE116302DA589746A94 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
 		58AD3A6047C9ED1652AF3BF232DE6071 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
 		5F66659B93B2D3DFBA3C95DF234D632D /* Pods-MTSandBoxBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTSandBoxBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		652E4BDAA6AE380058F82E0DD5208CA4 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
 		663FE0A1C5F31A0C017E6E288398EC7C /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEDD6F8F7BD6C44B3F42E012E781F8B /* MTSandBoxBrowser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MTSandBoxBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		719F09840059266E876466A3F717D7DD /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
-		7BB375C5D4DC016FC61DCF39065218E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D8AAC3C099DCD396628F290652CD3C0 /* Pods-MTSandBoxBrowser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTSandBoxBrowser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8AB948B3E3441CDE3A1EBB0537841D09 /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
 		917EBA0CE144F5D264374590CF701162 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9586B55B46E8C0B44A00A4768BC6AECC /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
 		977E7C82FBEF5195B0BE2A8AB842B34C /* Pods-MTSandBoxBrowser_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTSandBoxBrowser_Tests-resources.sh"; sourceTree = "<group>"; };
 		97D828558472BD73BFD9AB43E8DC5418 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 		DABED87B536CC812F639D83335E9B75F /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
 		DE380BE3ADE563CD077D30947ECF0018 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
 		DF6DB4267B8F5A38B9FC141F6790540D /* Pods-MTSandBoxBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTSandBoxBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E3B663D019843C762A2F65872716D3AE /* README 2.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "README 2.md"; sourceTree = "<group>"; };
 		E4DAB1ACFE127BF3AD6BC1E6D88F0CF0 /* MTSandBoxBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTSandBoxBrowser-dummy.m"; sourceTree = "<group>"; };
 		E9EB1BEE7A5F5ABAFB5E3DACD1FCE36D /* Pods-MTSandBoxBrowser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTSandBoxBrowser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EC5C31D5276CB81BF32DD5D5FA2F2DDE /* Pods-MTSandBoxBrowser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MTSandBoxBrowser_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		EFC39D0AF814E4D46270BEEE41A207FC /* Pods-MTSandBoxBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTSandBoxBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1AB12DE398E6A262846A90E67686467 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
 		F431DA53D7CD8600CF5A9BEF41C95BF3 /* Pods-MTSandBoxBrowser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTSandBoxBrowser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F777938E92F72EE46CEB06B8C7BC3D2F /* MTSandBoxBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTSandBoxBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F777938E92F72EE46CEB06B8C7BC3D2F /* MTSandBoxBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTSandBoxBrowser.framework; path = MTSandBoxBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC26543CA3CB35A5E5991DF609A23D49 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				BD3775EBCE092AD02DD93AFBC0E7C3AD /* ReplaceMe.swift */,
-				E641E02CDF26EDDB5EF25E4DF02C5E3D /* Pod */,
+				F99CAF64855D14B6C126E39667F99D1D /* Pod */,
 				E4FA073410FF6BC784B788BD8138B38F /* Support Files */,
 			);
 			name = MTSandBoxBrowser;
@@ -323,6 +323,7 @@
 				22F33DA5E93F275F90474F439B13C5AF /* Core */,
 				9D6A7576344F0B8C787C72E687CFF501 /* Support Files */,
 			);
+			name = GCDWebServer;
 			path = GCDWebServer;
 			sourceTree = "<group>";
 		};
@@ -385,12 +386,12 @@
 			path = "Example/Pods/Target Support Files/MTSandBoxBrowser";
 			sourceTree = "<group>";
 		};
-		E641E02CDF26EDDB5EF25E4DF02C5E3D /* Pod */ = {
+		F99CAF64855D14B6C126E39667F99D1D /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				19DFB8FD2D863F8035924D3EAD4D9725 /* LICENSE */,
-				33E57BD66B5450BE22C44EA9108182C3 /* MTSandBoxBrowser.podspec */,
-				7BB375C5D4DC016FC61DCF39065218E1 /* README.md */,
+				10DF58DDED6922F8B0B177FD47BE3D01 /* LICENSE */,
+				6AEDD6F8F7BD6C44B3F42E012E781F8B /* MTSandBoxBrowser.podspec */,
+				E3B663D019843C762A2F65872716D3AE /* README 2.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -531,12 +532,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
-				TargetAttributes = {
-					98CEFC4E116F9CF835C6808AB4599FBE = {
-						LastSwiftMigration = 1010;
-					};
-				};
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -666,38 +662,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01A1883DFC16EFD0AF25873F5401D223 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C27DF992C5FCF02B7745D735D2EBB0E2 /* GCDWebServer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
-				PRODUCT_MODULE_NAME = GCDWebServer;
-				PRODUCT_NAME = GCDWebServer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		03DFA706B4155BD9B8B2FAA2D824188E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF6DB4267B8F5A38B9FC141F6790540D /* Pods-MTSandBoxBrowser_Example.debug.xcconfig */;
@@ -766,6 +730,40 @@
 			};
 			name = Debug;
 		};
+		1F2BB672A6CF3189A1F55442F030144F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503ABEE7DE3DD1FF1D9EBEE8F5992F9C /* MTSandBoxBrowser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MTSandBoxBrowser/MTSandBoxBrowser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MTSandBoxBrowser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MTSandBoxBrowser/MTSandBoxBrowser.modulemap";
+				PRODUCT_MODULE_NAME = MTSandBoxBrowser;
+				PRODUCT_NAME = MTSandBoxBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4691FD7AD3C9201C65DE61709482A046 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3BBAE3D214A8F8FB23EC34B9019E221 /* Pods-MTSandBoxBrowser_Example.release.xcconfig */;
@@ -793,7 +791,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -856,12 +855,11 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		7A518F0EA0122392CE7FDD6958A328AA /* Debug */ = {
+		57DE6DF358FD33A69C1CF6797350E91D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 503ABEE7DE3DD1FF1D9EBEE8F5992F9C /* MTSandBoxBrowser.xcconfig */;
 			buildSettings = {
@@ -892,39 +890,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		80994BD0A8DA42D8905A1B0EF7A7782F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 503ABEE7DE3DD1FF1D9EBEE8F5992F9C /* MTSandBoxBrowser.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MTSandBoxBrowser/MTSandBoxBrowser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MTSandBoxBrowser/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MTSandBoxBrowser/MTSandBoxBrowser.modulemap";
-				PRODUCT_MODULE_NAME = MTSandBoxBrowser;
-				PRODUCT_NAME = MTSandBoxBrowser;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8B1CC039B06C6136179C123449802F15 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -960,7 +925,7 @@
 			};
 			name = Release;
 		};
-		AF55AF762E022BFB9CB940C6475C8B84 /* Debug */ = {
+		A12C93346E1A14A4B8B63CA3E61301B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C27DF992C5FCF02B7745D735D2EBB0E2 /* GCDWebServer.xcconfig */;
 			buildSettings = {
@@ -984,7 +949,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF1BC348B328169A87DFDDC9887C45D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27DF992C5FCF02B7745D735D2EBB0E2 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1079,8 +1076,8 @@
 		BFC36B3A58EFBB873ACC3752A1CE00D0 /* Build configuration list for PBXNativeTarget "MTSandBoxBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A518F0EA0122392CE7FDD6958A328AA /* Debug */,
-				80994BD0A8DA42D8905A1B0EF7A7782F /* Release */,
+				57DE6DF358FD33A69C1CF6797350E91D /* Debug */,
+				1F2BB672A6CF3189A1F55442F030144F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1088,8 +1085,8 @@
 		D139CF624DB178B6452CF2355955326D /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF55AF762E022BFB9CB940C6475C8B84 /* Debug */,
-				01A1883DFC16EFD0AF25873F5401D223 /* Release */,
+				AF1BC348B328169A87DFDDC9887C45D3 /* Debug */,
+				A12C93346E1A14A4B8B63CA3E61301B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
