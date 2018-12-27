@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sqzxcv' => 'sqzxcv@gmail.com' }
-  s.source           = { :git => 'https://github.com/sqzxcv/MTSandBoxBrowser.git', :tag => 'aaf831ea59f9b7ec82cdc0e6707bdaa39b8efbf4' }
+  s.source           = { :git => 'https://github.com/sqzxcv/MTSandBoxBrowser.git', :tag => '0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = "4.2"
 
