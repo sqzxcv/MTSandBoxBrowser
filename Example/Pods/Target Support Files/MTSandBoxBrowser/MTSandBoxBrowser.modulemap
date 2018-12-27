@@ -1,0 +1,6 @@
+framework module MTSandBoxBrowser {
+  umbrella header "MTSandBoxBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

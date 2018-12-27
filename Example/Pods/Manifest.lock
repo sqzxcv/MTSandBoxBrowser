@@ -1,0 +1,25 @@
+PODS:
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+  - MTSandBoxBrowser (0.1.0):
+    - GCDWebServer (~> 3.4.2)
+
+DEPENDENCIES:
+  - MTSandBoxBrowser (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GCDWebServer
+
+EXTERNAL SOURCES:
+  MTSandBoxBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  MTSandBoxBrowser: 31bbcd119ec0bbcefc93f2e82d3bfaad581df414
+
+PODFILE CHECKSUM: bcd7e5c1fb37a68d36147a3c8cdad64baf1432a2
+
+COCOAPODS: 1.5.3
