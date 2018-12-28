@@ -71,7 +71,7 @@ public class MTSandBoxBrowserViewController: UIViewController {
         NSLog("文件存储位置 :" + self.savePath)
         webServer.allowHiddenItems = false
 //        webServer.isEnableCreadtFold = false
-        webServer.title = "嘿嘿文件浏览"
+        webServer.title = "文件浏览"
         webServer.prologue = " "
         webServer.epilogue = " "
         webServer.delegate = self
@@ -264,36 +264,37 @@ extension MTSandBoxBrowserViewController {
 
 extension MTSandBoxBrowserViewController:GCDWebUploaderDelegate{
 
-    func webServerDidStop(_ server: GCDWebServer) {
+  private func webServerDidStop(_ server: GCDWebServer) {
         NSLog("GCDWebServer not running")
     }
     
-    func webServerDidStart(_ server: GCDWebServer) {
-        
+    private func webServerDidStart(_ server: GCDWebServer) {
+         NSLog("webServerDidStart")
     }
     
-    func webServerDidDisconnect(_ server: GCDWebServer) {
+    private func webServerDidDisconnect(_ server: GCDWebServer) {
         NSLog("GCDWebServer not running")
     }
     
-    func webUploader(_ uploader: GCDWebUploader, didUploadFileAtPath path: String) {
+    private func webUploader(_ uploader: GCDWebUploader, didUploadFileAtPath path: String) {
+         NSLog("didUploadFileAtPath")
 //        let fileName = (path as NSString).lastPathComponent
 
     }
     
-    func webUploader(_ uploader: GCDWebUploader, didDownloadFileAtPath path: String) {
+    private func webUploader(_ uploader: GCDWebUploader, didDownloadFileAtPath path: String) {
+         NSLog("didDownloadFileAtPath")
+    }
+    
+   private func webUploader(_ uploader: GCDWebUploader, didCreateDirectoryAtPath path: String) {
+         NSLog("didCreateDirectoryAtPath")
+    }
+    
+    private func webUploader(_ uploader: GCDWebUploader, didMoveItemFromPath fromPath: String, toPath: String) {
         
     }
     
-    func webUploader(_ uploader: GCDWebUploader, didCreateDirectoryAtPath path: String) {
-        
-    }
-    
-    func webUploader(_ uploader: GCDWebUploader, didMoveItemFromPath fromPath: String, toPath: String) {
-        
-    }
-    
-    func webUploader(_ uploader: GCDWebUploader, didDeleteItemAtPath path: String) {
+    private func webUploader(_ uploader: GCDWebUploader, didDeleteItemAtPath path: String) {
 //        let fileName = (path as NSString).lastPathComponent
 
     }
