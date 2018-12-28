@@ -12,7 +12,6 @@ import WebKit
 import AFNetworking
 //MARK:- Init
 public class MTSandBoxBrowserViewController: UIViewController {
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
