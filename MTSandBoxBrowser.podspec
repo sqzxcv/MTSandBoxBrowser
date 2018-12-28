@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'sqzxcv' => 'sqzxcv@gmail.com' }
   s.source           = { :git => 'https://github.com/sqzxcv/MTSandBoxBrowser.git', :tag => '0.1.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.swift_version = "4.2"
+  s.swift_version = "3.2"
 
   s.ios.deployment_target = '8.0'
 
