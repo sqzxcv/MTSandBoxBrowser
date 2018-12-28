@@ -11,19 +11,19 @@ import GCDWebServer
 import WebKit
 import AFNetworking
 //MARK:- Init
-public class MTSandBoxBrowserViewController: UIViewController {
+open class MTSandBoxBrowserViewController: UIViewController {
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
         self.addNotification()
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         self.startWebServeDeal()
     }
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
          self.webServer.stop()
     }
     
