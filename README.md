@@ -28,4 +28,4 @@ hebing, 1101918842@qq.com
 
 ## License
 
-MTSandBoxBrowser is available under the MIT license. See the LICENSE file for more info.
+MTSandBoxBrowser is available under the MIT license. See the LICENSE file for more info...
