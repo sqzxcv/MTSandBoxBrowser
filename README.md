@@ -23,7 +23,7 @@ pod 'MTSandBoxBrowser'
 ## Author
 
 sqzxcv, sqzxcv@gmail.com
-
+  
 hebing, 1101918842@qq.com
 
 ## License
