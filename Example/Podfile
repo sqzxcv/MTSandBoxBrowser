@@ -2,7 +2,6 @@ use_frameworks!
 
 target 'MTSandBoxBrowser_Example' do
   pod 'MTSandBoxBrowser', :path => '../'
-
   target 'MTSandBoxBrowser_Tests' do
     inherit! :search_paths
 

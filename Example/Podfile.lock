@@ -1,8 +1,24 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - GCDWebServer (3.4.2):
     - GCDWebServer/Core (= 3.4.2)
   - GCDWebServer/Core (3.4.2)
   - MTSandBoxBrowser (0.1.0):
+    - AFNetworking
     - GCDWebServer (~> 3.4.2)
 
 DEPENDENCIES:
@@ -10,6 +26,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - GCDWebServer
 
 EXTERNAL SOURCES:
@@ -17,9 +34,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
-  MTSandBoxBrowser: c577e679b9a053e4a2481a503e47534522cff1bf
+  MTSandBoxBrowser: f716d6b4bf5a8ee6ac094fe8834e497ec5edc716
 
-PODFILE CHECKSUM: bcd7e5c1fb37a68d36147a3c8cdad64baf1432a2
+PODFILE CHECKSUM: b8d440c3dfb37af0767ca5085abd1daa1d2c54ea
 
 COCOAPODS: 1.5.3
