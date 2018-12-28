@@ -11,18 +11,25 @@ import GCDWebServer
 import WebKit
 import AFNetworking
 //MARK:- Init
-@objc class MTSandBoxBrowserViewController: UIViewController {
+public class MTSandBoxBrowserViewController: UIViewController {
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
         self.addNotification()
     }
     
+    public override func viewWillAppear(_ animated: Bool) {
+        self.startWebServeDeal()
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+         self.webServer.stop()
+    }
+    
     deinit {
         //移除通知
-        self.webServer.stop()
-        NotificationCenter.default.removeObserver(self)
+       
     }
     
     lazy var webView: WKWebView = {
@@ -39,13 +46,17 @@ import AFNetworking
 
     /// 左侧返回按钮
     lazy var backBtn: UIButton = {
-        let backBtn = UIButton(type: .custom)
-        let img = UIImage(named: "HY_Back")
-        backBtn.frame = CGRect(x: 10, y: 0, width: (img?.size.width)!, height: (img?.size.height)!)
-        backBtn.setBackgroundImage(img, for: .normal)
-        backBtn.setBackgroundImage(img, for: .highlighted)
-        backBtn.addTarget(self, action: #selector(MTSandBoxBrowserViewController.onClickLeftBackBtn), for: .touchUpInside)
-        return backBtn
+        let btn = UIButton()
+        btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        let imag = UIImage(named: "back_b")
+        if imag != nil{
+            btn.setBackgroundImage(imag, for: .normal)
+        }else{
+            btn.setTitle("返回", for: .normal)
+            btn.setTitleColor(UIColor.black, for: .normal)
+        }
+        btn.addTarget(self, action: #selector(MTSandBoxBrowserViewController.onClickLeftBackBtn), for: .touchUpInside)
+        return btn
     }()
     
     public var savePath: String = NSHomeDirectory()
@@ -61,8 +72,8 @@ import AFNetworking
         webServer.allowHiddenItems = false
 //        webServer.isEnableCreadtFold = false
         webServer.title = "嘿嘿文件浏览"
-        webServer.prologue = ""
-        webServer.epilogue = ""
+        webServer.prologue = " "
+        webServer.epilogue = " "
         webServer.delegate = self
         return webServer
     }()
@@ -73,36 +84,47 @@ import AFNetworking
 //MARK:- UI
 extension MTSandBoxBrowserViewController {
     func setUI() {
-
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: self.backBtn) 
+        let leftItem = UIBarButtonItem(customView: self.backBtn)
+        self.navigationItem.leftBarButtonItem = leftItem
         self.setSubViews()
         self.setSubViewConstraints()
-       //开始加载网页
-                let manager = AFNetworkReachabilityManager()
+ 
+      
+    }
+
+    func startWebServeDeal() {
+        //开始加载网页
+        let manager = AFNetworkReachabilityManager.shared()
         if self.webServer.start() == true && manager.networkReachabilityStatus == .reachableViaWiFi {
-//            self.url = manager.g
+            self.url = self.webServer.serverURL?.absoluteString
             self.navigationItem.title = self.url
             let url = URL(string: self.url ?? "")
             if url != nil {
                 //设置无缓存策略和超时
-//                self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
+                //                self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
                 do {
                     let htmlData = try Data(contentsOf: url!)
                     if #available(iOS 9.0, *) {
                         self.webView.load(htmlData, mimeType: "ext/html", characterEncodingName: "UTF-8", baseURL: url!)
                     } else {
-                    self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
+                        self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
                     }
                     
                 } catch {
                     self.navigationItem.title = "请将手机接到Wi-Fi"
                 }
-               
+                
             }
         }else{
-            self.navigationItem.title = "请将手机接到Wi-Fi"
+            if manager.networkReachabilityStatus != .reachableViaWiFi{
+                self.navigationItem.title = "请将手机接到Wi-Fi"
+            }else{
+                if webServer.start() == false{
+                    NSLog("GCDWebServer not running")
+                }
+                self.navigationItem.title = "GCDWebServer not running"
+            }
         }
-      
     }
     
     func setSubViews() {
@@ -137,7 +159,12 @@ extension MTSandBoxBrowserViewController {
         if self.webView.canGoBack {
             self.webView.goBack()
         }else{
-            self.navigationController?.popViewController(animated: true)
+            if self.navigationController != nil && (self.navigationController?.viewControllers.count ?? 0) > 1{
+                self.navigationController?.popViewController(animated: true)
+            }else{
+                self.dismiss(animated: true, completion: nil)
+            }
+            
         }
     }
     
@@ -208,7 +235,7 @@ extension MTSandBoxBrowserViewController:WKNavigationDelegate,WKUIDelegate,UIScr
 //MARK:- Notification
 extension MTSandBoxBrowserViewController {
     fileprivate func addNotification() {
-        let manager = AFNetworkReachabilityManager()
+        let manager = AFNetworkReachabilityManager.shared()
         manager.startMonitoring()
         /**
          typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
@@ -238,7 +265,7 @@ extension MTSandBoxBrowserViewController {
 extension MTSandBoxBrowserViewController:GCDWebUploaderDelegate{
 
     func webServerDidStop(_ server: GCDWebServer) {
-        
+        NSLog("GCDWebServer not running")
     }
     
     func webServerDidStart(_ server: GCDWebServer) {
@@ -246,11 +273,11 @@ extension MTSandBoxBrowserViewController:GCDWebUploaderDelegate{
     }
     
     func webServerDidDisconnect(_ server: GCDWebServer) {
-        
+        NSLog("GCDWebServer not running")
     }
     
     func webUploader(_ uploader: GCDWebUploader, didUploadFileAtPath path: String) {
-        let fileName = (path as NSString).lastPathComponent
+//        let fileName = (path as NSString).lastPathComponent
 
     }
     
@@ -267,7 +294,7 @@ extension MTSandBoxBrowserViewController:GCDWebUploaderDelegate{
     }
     
     func webUploader(_ uploader: GCDWebUploader, didDeleteItemAtPath path: String) {
-        let fileName = (path as NSString).lastPathComponent
+//        let fileName = (path as NSString).lastPathComponent
 
     }
 }

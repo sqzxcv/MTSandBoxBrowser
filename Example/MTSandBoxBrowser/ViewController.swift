@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MTSandBoxBrowser
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -20,5 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let vc = MTSandBoxBrowserViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        self.present(nav, animated: true, completion: nil)
+    }
 }
 
