@@ -59,7 +59,7 @@ import AFNetworking
         let webServer = GCDWebUploader(uploadDirectory: self.savePath)
         NSLog("文件存储位置 :" + self.savePath)
         webServer.allowHiddenItems = false
-        webServer.isEnableCreadtFold = false
+//        webServer.isEnableCreadtFold = false
         webServer.title = "嘿嘿文件浏览"
         webServer.prologue = ""
         webServer.epilogue = ""

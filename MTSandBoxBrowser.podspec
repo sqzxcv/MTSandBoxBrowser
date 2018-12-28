@@ -35,6 +35,8 @@ TODO: Add long description of the pod here.
   s.source_files = 'MTSandBoxBrowser/Classes/**/*'
   
   s.dependency 'GCDWebServer', '~> 3.4.2'
+  s.dependency 'GCDWebServer/WebUploader', '~> 3.4.2'
+  s.dependency 'GCDWebServer/WebDAV', '~> 3.4.2'
   s.dependency 'AFNetworking'
   # s.resource_bundles = {
   #   'MTSandBoxBrowser' => ['MTSandBoxBrowser/Assets/*.png']

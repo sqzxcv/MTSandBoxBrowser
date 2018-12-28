@@ -24,6 +24,12 @@
     "GCDWebServer": [
       "~> 3.4.2"
     ],
+    "GCDWebServer/WebUploader": [
+      "~> 3.4.2"
+    ],
+    "GCDWebServer/WebDAV": [
+      "~> 3.4.2"
+    ],
     "AFNetworking": [
 
     ]
