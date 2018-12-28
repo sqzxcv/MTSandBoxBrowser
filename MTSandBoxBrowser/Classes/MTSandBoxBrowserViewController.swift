@@ -52,7 +52,7 @@ public class MTSandBoxBrowserViewController: UIViewController {
         if imag != nil{
             btn.setBackgroundImage(imag, for: .normal)
         }else{
-            btn.setTitle("返回", for: .normal)
+            btn.setTitle("back", for: .normal)
             btn.setTitleColor(UIColor.black, for: .normal)
         }
         btn.addTarget(self, action: #selector(MTSandBoxBrowserViewController.onClickLeftBackBtn), for: .touchUpInside)
@@ -71,7 +71,7 @@ public class MTSandBoxBrowserViewController: UIViewController {
         NSLog("文件存储位置 :" + self.savePath)
         webServer.allowHiddenItems = false
 //        webServer.isEnableCreadtFold = false
-        webServer.title = "文件浏览"
+        webServer.title = "Browse Sandbox files"
         webServer.prologue = " "
         webServer.epilogue = " "
         webServer.delegate = self
@@ -105,19 +105,19 @@ extension MTSandBoxBrowserViewController {
                 do {
                     let htmlData = try Data(contentsOf: url!)
                     if #available(iOS 9.0, *) {
-                        self.webView.load(htmlData, mimeType: "ext/html", characterEncodingName: "UTF-8", baseURL: url!)
+                        self.webView.load(htmlData, mimeType: "text/html", characterEncodingName: "UTF-8", baseURL: url!)
                     } else {
                         self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
                     }
                     
                 } catch {
-                    self.navigationItem.title = "请将手机接到Wi-Fi"
+                    self.navigationItem.title = "No Wi-Fi"
                 }
                 
             }
         }else{
             if manager.networkReachabilityStatus != .reachableViaWiFi{
-                self.navigationItem.title = "请将手机接到Wi-Fi"
+                self.navigationItem.title = "No Wi-Fi"
             }else{
                 if webServer.start() == false{
                     NSLog("GCDWebServer not running")
@@ -143,8 +143,8 @@ extension MTSandBoxBrowserViewController {
         if self.isNeedShowDisConnectAlert == false{
             return
         }
-        let alert = UIAlertController(title: nil, message: "无法连接到Wi-Fi，请在手机上打开Wi-Fi并刷新此页", preferredStyle: .alert)
-        let confirm = UIAlertAction(title: "确定", style: .cancel) { (alert) in
+        let alert = UIAlertController(title: nil, message: "No Wi-Fi", preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "OK", style: .cancel) { (alert) in
         }
         alert.addAction(confirm)
         self.isNeedShowDisConnectAlert = false
@@ -193,8 +193,8 @@ extension MTSandBoxBrowserViewController:WKNavigationDelegate,WKUIDelegate,UIScr
     
     //Alert弹框
     public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Swift.Void){
-        let alert = UIAlertController(title: "提示", message: message, preferredStyle: UIAlertController.Style.alert)
-        let action = UIAlertAction(title: "好的", style: UIAlertAction.Style.cancel) { (_) in
+        let alert = UIAlertController(title: "Tip", message: message, preferredStyle: UIAlertController.Style.alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) { (_) in
             completionHandler()
         }
         alert.addAction(action)
@@ -203,11 +203,11 @@ extension MTSandBoxBrowserViewController:WKNavigationDelegate,WKUIDelegate,UIScr
     
     //confirm弹框
     public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Swift.Void){
-        let alert = UIAlertController(title: "提示", message: message, preferredStyle: UIAlertController.Style.alert)
-        let action = UIAlertAction(title: "确定", style: UIAlertAction.Style.default) { (_) in
+        let alert = UIAlertController(title: "Tip", message: message, preferredStyle: UIAlertController.Style.alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (_) in
             completionHandler(true)
         }
-        let cancelAction = UIAlertAction(title: "取消", style: UIAlertAction.Style.cancel) { (_) in
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) { (_) in
             completionHandler(false)
         }
         alert.addAction(action)
@@ -221,7 +221,7 @@ extension MTSandBoxBrowserViewController:WKNavigationDelegate,WKUIDelegate,UIScr
         alert.addTextField { (textFiled) in
             textFiled.text = defaultText
         }
-        let action = UIAlertAction(title: "确定", style: UIAlertAction.Style.default) { (_) in
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (_) in
             completionHandler(alert.textFields?.last?.text)
         }
         alert.addAction(action)
