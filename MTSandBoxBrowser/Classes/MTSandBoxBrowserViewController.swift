@@ -95,7 +95,7 @@ extension MTSandBoxBrowserViewController {
     func startWebServeDeal() {
         //开始加载网页
         let manager = AFNetworkReachabilityManager.shared()
-        if self.webServer.start() == true && manager.networkReachabilityStatus == .reachableViaWiFi {
+        if self.webServer.start() == true {
             self.url = self.webServer.serverURL?.absoluteString
             self.navigationItem.title = self.url
             let url = URL(string: self.url ?? "")
