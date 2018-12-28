@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTSandBoxBrowser'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Browse Sandbox files on iOS'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sqzxcv' => 'sqzxcv@gmail.com' }
-  s.source           = { :git => 'https://github.com/sqzxcv/MTSandBoxBrowser.git', :tag => '0.1.0' }
+  s.source           = { :git => 'https://github.com/sqzxcv/MTSandBoxBrowser.git', :tag => '0.1.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = "4.2"
 
