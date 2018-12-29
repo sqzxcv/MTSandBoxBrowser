@@ -101,18 +101,8 @@ extension MTSandBoxBrowserViewController {
             let url = URL(string: self.url ?? "")
             if url != nil {
                 //设置无缓存策略和超时
-                //                self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
-                do {
-                    let htmlData = try Data(contentsOf: url!)
-                    if #available(iOS 9.0, *) {
-                        self.webView.load(htmlData, mimeType: "text/html", characterEncodingName: "UTF-8", baseURL: url!)
-                    } else {
-                        self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
-                    }
-                    
-                } catch {
-                    self.navigationItem.title = "No Wi-Fi"
-                }
+                self.webView.load(URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 30.0))
+              
                 
             }
         }else{
